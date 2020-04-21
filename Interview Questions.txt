@@ -1,0 +1,26 @@
+***Dynamic Array(growable)
+1. What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+
+    - To access an array it takes O(1) time. 
+    - To add or remove from the front it takes O(n). 
+    - To add at back it's O(1) if array is not full, and O(n) if it is, to remove from the back it's O(n).
+
+2. What is the worse case scenario if you try to extend the storage size of a dynamic array?
+
+    - Worst case scenario it would be O(n) since we have to grow the array, so we're allocating a bigger memory block and copying the previous array.
+
+
+3. Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized? 
+
+    - Blockchain is structured as a list of blocks with transactions in a particular order. 
+    - Blocks are lists of transactions recorded into a ledger over a given period.
+    - Chain is a hash that links one block to another, mathematically “chaining” them together.
+    - Back linked lists of transactions arranged in blocks.
+
+4.Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+
+    - It's an algorithm, it's used to validate transactions that are gathered into blocks, which are linked together to form a blockchain.
+    - Blocks are "mined" or added to the blockchain by generating a valid hash.
+    - It protects the chain from attack because if anyone were to try to change any amounts the hash that resulted from it would be unrecognizable and it would be rejected.
+    - Specifically to proof of work the vulnerabilities are there is an attacker selectively reveals mined blocks to waste computational resources of those that are mining as intended.
+
